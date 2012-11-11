@@ -10,5 +10,5 @@ into the xml. Lastly it contains danish translation for
 packages/apps/ROMControl.
 
 All you need to do is clone into the git, and place
-local_manifest.xml inside <your_AOKP_source>/.repo, and
+local_manifest.xml inside your_AOKP_source/.repo, and
 do a repo sync.
