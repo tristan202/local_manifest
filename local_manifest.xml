@@ -4,12 +4,12 @@
   <remote  name="tristan202"
            fetch="https://github.com/" />
 
-  <remove-project name="platform/frameworks/base"/>
-  <remove-project name="platform/packages/apps/Mms"/>
-  <remove-project name="platform/packages/apps/ROMControl"/>
+  <remove-project name="AOKP/frameworks_base"/>
+  <remove-project name="AOKP/packages_apps_Mms"/>
+  <remove-project name="AOKP/packages_apps_ROMControl"/>
 
   <project path="frameworks/base" name="tristan202/frameworks_base" remote="tristan202" revision="jb" />
-  <project path="packages/apps/Mms" name="packages_apps_Mms" remote="cm" revision="jellybean" />
+  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="cm" revision="jellybean" />
   <project path="packages/apps/ROMControl" name="tristan202/packages_apps_ROMControl" remote="tristan202" revision="jb" />
 
 </manifest>
