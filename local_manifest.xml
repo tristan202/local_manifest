@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <remote  name="tristan202"
-           fetch="https://github.com/" />
+    <remote name="tristan202"
+           	fetch="https://github.com/" />
 
-  <remove-project name="AOKP/frameworks_base"/>
-  <remove-project name="AOKP/packages_apps_Mms"/>
-  <remove-project name="AOKP/packages_apps_ROMControl"/>
+    <remote name="twrp"
+           	fetch="https://github.com/" />
 
-  <project path="frameworks/base" name="tristan202/frameworks_base" remote="tristan202" revision="jb" />
-  <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="cm" revision="jellybean" />
-  <project path="packages/apps/ROMControl" name="tristan202/packages_apps_ROMControl" remote="tristan202" revision="jb" />
+  	<remove-project name="AOKP/packages_apps_Mms"/>
+  	<remove-project name="platform/bootable/recovery" />
+  	<remove-project name="AOKP/device_samsung_tuna" />
+
+  	<project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="cm" revision="mr1-staging" />
+  	<project path="bootable/recovery" name="tristan202/Team-Win-Recovery-Project" remote="tristan202" revision="jb-wip" />
+  	<project path="device/samsung/tuna" name="TeamWin/device_samsung_tuna" remote="twrp" />
 
 </manifest>
+
