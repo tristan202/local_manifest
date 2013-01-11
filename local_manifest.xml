@@ -4,16 +4,22 @@
     <remote name="tristan202"
            	fetch="https://github.com/" />
 
-    <remote name="twrp"
-           	fetch="https://github.com/" />
+    <remove-project name="AOKP/android_build" />
+  	<remove-project name="AOKP/vendor_aokp" />
+  	<remove-project name="AOKP/frameworks_base" />
+  	<remove-project name="AOKP/packages_apps_ROMControl" />
+    <remove-project name="AOKP/packages_apps_Mms" />
+    <remove-project name="AOKP/packages_apps_Launcher2" />
 
-  	<remove-project name="AOKP/packages_apps_Mms"/>
-  	<remove-project name="platform/bootable/recovery" />
-  	<remove-project name="AOKP/device_samsung_tuna" />
-
-  	<project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="cm" revision="mr1-staging" />
-  	<project path="bootable/recovery" name="tristan202/Team-Win-Recovery-Project" remote="tristan202" revision="jb-wip" />
-  	<project path="device/samsung/tuna" name="TeamWin/device_samsung_tuna" remote="twrp" />
+    <project path="build" name="tristan202/android_build" remote="tristan202" revision="jb-mr1" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
+  	<project path="packages/apps/LockClock" name="tristan202/android_packages_apps_LockClock" remote="tristan202" revision="cm-10.1" />
+    <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="cm" revision="cm-10.1" />
+    <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="cm" revision="cm-10.1" />
+    <project path="vendor/aokp" name="tristan202/vendor_aokp" remote="tristan202" revision="jb-mr1" />
+    <project path="frameworks/base" name="tristan202/frameworks_base" remote="tristan202" revision="jb-mr1" />
+    <project path="packages/apps/ROMControl" name="tristan202/packages_apps_ROMControl" remote="tristan202" revision="jb-mr1" />
+    <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="cm" revision="cm-10.1" />
 
 </manifest>
-
